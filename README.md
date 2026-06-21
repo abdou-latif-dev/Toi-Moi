@@ -1,50 +1,45 @@
-# Welcome to your Expo app 👋
+# Toi & Moi ─ Plateforme Événementielle & Sociale Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Toi & Moi** est une application mobile native premium conçue pour dynamiser les interactions sociales et la découverte d'événements locaux (marchés d'Afrique de l'Ouest). L'application arbore un design minimaliste et épuré (blanc et orange vif), mettant l'accent sur l'ergonomie, la performance et l'interaction réelle.
 
-## Get started
+Initialement pensée avec un système de billetterie, l'application intègre un modèle innovant d'accès hybride via la validation de **cartes physiques privilèges**, offrant une solution tech adaptée aux réalités du terrain connectant le monde physique et le numérique.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Fonctionnalités Clés
 
-2. Start the app
+*   **Découverte Intuitive :** Un flux dynamique d'événements triés par catégories (Tech, Sport, Food, Culture) avec filtres avancés et gestion de la géolocalisation.
+*   **Communautés & Groupes :** Création et gestion de profils de groupes pour rassembler les passionnés autour d'intérêts communs avant et après les événements.
+*   **Messagerie en Temps Réel :** Système de chat intégré pour faciliter l'organisation, les rencontres et la rétention sociale au sein de l'écosystème.
+*   **Vérification Physique via l'App :** Remplacement de la billetterie classique par un module permettant de lier l'application aux avantages d'une carte membre physique.
+*   **Flux de Validation Admin :** Système sécurisé permettant aux utilisateurs de proposer des événements, soumis à la validation d'un panneau d'administration centralisé avant publication.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🛠️ Stack Technique
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+L'architecture est pensée pour être scalable, robuste et performante :
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+*   **Front-End Mobile :** React Native & Expo (Architecture 100% Native, JavaScript/TypeScript).
+*   **Styling :** Tailwind CSS / NativeWind (Design système épuré, typographies premium, gestion rigoureuse des espaces vides).
+*   **Gestion d'État :** React Context / Zustand.
+*   **Cartographie & GPS :** React Native Maps (Intégration de repères géolocalisés et redirection vers les applications de navigation natives via Deep Linking).
+*   **Services Cloud (Back-End) :** Structuré pour une intégration Firebase / Supabase (Authentication, Realtime Database, Cloud Storage).
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📱 Maquettes & Interface
 
+Le design repose sur une charte graphique stricte :
+*   **Couleur Primaire :** Orange Vif (`#ff5f00`) pour l'action et le dynamisme.
+*   **Fonds :** Blanc Pur (`#ffffff`) et gris très clairs pour maximiser le contraste et donner un aspect haut de gamme.
+*   **Composants :** Formulaires épurés, boutons d'action massifs, listes fluides et conteneurs arrondis de style moderne (iOS/Android moderne).
+
+---
+
+## ⚙️ Installation et Lancement
+
+1. Cloner le projet :
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   git clone [https://github.com/votre-username/toietmoi.git](https://github.com/votre-username/toietmoi.git)
+   cd toietmoi
