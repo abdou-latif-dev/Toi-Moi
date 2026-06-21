@@ -1,0 +1,111 @@
+import { prototypeImages } from '@/constants/prototype-images';
+
+export const events = [
+  {
+    id: 'park-relax',
+    title: 'Se détendre au parc',
+    date: 'Mar. 10 juin',
+    time: '11h30 - 16h00',
+    shortDate: 'Mar. 10 juin · Parc Lomé',
+    footerDate: 'Mar 10 juin · 11h30',
+    location: 'Parc Lomé',
+    city: 'Lomé, Togo',
+    group: 'Lomé Food Fanatics',
+    rating: '4.9',
+    participants: '107 participants',
+    participantCount: '107 participants y vont',
+    price: 'Gratuit',
+    ticketType: '1x Billet Standard',
+    badge: 'Places limitées',
+    image: prototypeImages.discoverPark,
+    description:
+      "Rejoignez-nous pour un après-midi de détente au parc. Apportez vos couvertures, vos snacks préférés et votre bonne humeur. Nous aurons de la musique douce, des jeux de société et l'occasion parfaite de rencontrer de nouvelles personnes.",
+  },
+  {
+    id: 'africa-tech',
+    title: 'Africa Tech Festival 2025',
+    date: 'Ven. 14 juin',
+    time: '18h00 - 21h30',
+    shortDate: 'Ven. 14 juin · Hôtel 2 Février',
+    footerDate: 'Ven 14 juin · 18h00',
+    location: 'Hôtel 2 Février',
+    city: 'Lomé, Togo',
+    group: 'Lomé Tech Connect',
+    rating: '4.8',
+    participants: '320 participants',
+    participantCount: '320 participants y vont',
+    price: '5 000 FCFA',
+    ticketType: '1x Entrée Networking',
+    badge: 'Tech',
+    image: prototypeImages.discoverAfricaTech,
+    description:
+      "Une rencontre premium pour découvrir les projets numériques qui transforment l'Afrique de l'Ouest, connecter avec des fondateurs, investisseurs et talents tech à Lomé.",
+  },
+  {
+    id: 'west-africa-festival',
+    title: "Festival d'Afrique de l'Ouest",
+    date: 'Sam. 15 juin',
+    time: '16h00 - 23h00',
+    shortDate: 'Sam. 15 juin · Place des Fêtes',
+    footerDate: 'Sam 15 juin · 16h00',
+    location: 'Place des Fêtes',
+    city: 'Lomé, Togo',
+    group: 'Culture Togo',
+    rating: '4.7',
+    participants: '214 participants',
+    participantCount: '214 participants y vont',
+    price: '2 000 FCFA',
+    ticketType: '1x Pass Culture',
+    badge: 'Culture',
+    image: prototypeImages.discoverWestAfricaFestival,
+    description:
+      "Une célébration des cultures d'Afrique de l'Ouest avec musique, danse, gastronomie et rencontres autour des traditions contemporaines.",
+  },
+  {
+    id: 'ingenieuse-afrique',
+    title: 'Ingénieuses Afrique Meetup',
+    date: 'Mer. 19 juin',
+    time: '10h00 - 13h00',
+    shortDate: 'Mer. 19 juin · Bluezone Cacavéli',
+    footerDate: 'Mer 19 juin · 10h00',
+    location: 'Bluezone Cacavéli',
+    city: 'Lomé, Togo',
+    group: 'Women Innovators TG',
+    rating: '4.9',
+    participants: '86 participants',
+    participantCount: '86 participants y vont',
+    price: 'Gratuit',
+    ticketType: '1x Accès Meetup',
+    badge: 'Innovation',
+    image: prototypeImages.discoverIngenieuseAfrique,
+    description:
+      "Un meetup dédié aux femmes qui innovent dans la tech, l'ingénierie et l'entrepreneuriat, avec échanges pratiques et retours d'expérience.",
+  },
+  {
+    id: 'entrepreneurs-community',
+    title: 'Sommet Entrepreneurs & Communauté',
+    date: 'Jeu. 20 juin',
+    time: '09h00 - 17h00',
+    shortDate: 'Jeu. 20 juin · Radisson Lomé',
+    footerDate: 'Jeu 20 juin · 09h00',
+    location: 'Radisson Lomé',
+    city: 'Lomé, Togo',
+    group: 'Africa Business Circle',
+    rating: '4.6',
+    participants: '152 participants',
+    participantCount: '152 participants y vont',
+    price: '10 000 FCFA',
+    ticketType: '1x Pass Conférence',
+    badge: 'Business',
+    image: prototypeImages.discoverAecGroup,
+    description:
+      "Une journée pour connecter entrepreneurs, décideurs et communautés professionnelles autour des opportunités économiques et sociales du marché togolais.",
+  },
+] as const;
+
+export type EventItem = (typeof events)[number];
+
+export function findEventById(id?: string | string[]) {
+  const eventId = Array.isArray(id) ? id[0] : id;
+  return events.find((event) => event.id === eventId) ?? events[0];
+}
